@@ -3,4 +3,4 @@ x, y = WID / 2, HEI / 2
 RAD = 15
 SPEED = 5
 BLACK = (0, 0, 0)
-YELLOW = (255, 200, 0)
+WHITE = (255, 255, 255)
