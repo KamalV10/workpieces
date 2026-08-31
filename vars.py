@@ -1,5 +1,4 @@
 WID, HEI = 600, 800
-x, y = WID / 2, HEI / 2
 RAD = 15
 SPEED = 5
 BLACK = (0, 0, 0)

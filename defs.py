@@ -1,20 +1,23 @@
 import vars as v
 import pygame
-def movement(keys):
+def movement(keys, x, y):
     if keys[pygame.K_UP] or keys[pygame.K_w]:
-        v.y -= v.SPEED
+        y -= v.SPEED
     if keys[pygame.K_LEFT] or keys[pygame.K_a]:
-        v.x -= v.SPEED
+        x -= v.SPEED
     if keys[pygame.K_DOWN] or keys[pygame.K_s]:
-        v.y += v.SPEED
+        y += v.SPEED
     if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
-            v.x += v.SPEED
-def barrier():
-    if v.x < v.RAD:
-        v.x = v.RAD
-    if v.x > v.WID - v.RAD:
-        v.x = v.WID - v.RAD
-    if v.y < v.RAD:
-        v.y = v.RAD
-    if v.y > v.HEI - v.RAD:
-        v.y = v.HEI - v.RAD
+            x += v.SPEED
+    return(x, y)
+
+def barrier(x, y):
+    if x < v.RAD:
+        x = v.RAD
+    if x > v.WID - v.RAD:
+        x = v.WID - v.RAD
+    if y < v.RAD:
+        y = v.RAD
+    if y > v.HEI - v.RAD:
+        y = v.HEI - v.RAD
+    return(x, y)
