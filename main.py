@@ -12,12 +12,13 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    keys = pygame.key.get_pressed()
+
     player = c.Player(x, y)
     player.movement()
     player.barrier()
+
     x, y = player.x, player.y
     screen.fill(v.BLACK)
-    pygame.draw.circle(screen, v.WHITE, (int(x), int(y)), v.RAD)
+    pygame.draw.circle(screen, v.WHITE, (x, y), v.RAD)
     pygame.display.flip()
     clock.tick(60)

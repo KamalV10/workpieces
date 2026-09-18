@@ -23,3 +23,6 @@ class Player():
             self.y = v.RAD
         if self.y > v.HEI - v.RAD:
             self.y = v.HEI - v.RAD
+class Enemy():
+    def __init__(self):
+        self.enemyx = enemyx

@@ -3,3 +3,6 @@ RAD = 15
 SPEED = 5
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+
+ENEMY_RAD = 20
+ENEMY_COLOR = (0, 0, 255)
